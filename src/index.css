@@ -1,38 +1,48 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 0%; /* Black */
-    --foreground: 60 100% 50%; /* Yellow */
-    
-    --card: 0 0% 10%; /* Darker Black */
-    --card-foreground: 60 100% 50%; /* Yellow */
-    
-    --popover: 0 0% 10%; /* Darker Black */
-    --popover-foreground: 60 100% 50%; /* Yellow */
-    
-    --primary: 60 100% 50%; /* Yellow */
-    --primary-foreground: 0 0% 0%; /* Black */
-    
-    --secondary: 60 100% 40%; /* Darker Yellow */
-    --secondary-foreground: 0 0% 0%; /* Black */
-    
-    --muted: 0 0% 20%; /* Grayish Black */
-    --muted-foreground: 60 70% 70%; /* Light Yellow */
-    
-    --accent: 0 0% 20%; /* Grayish Black */
-    --accent-foreground: 60 100% 50%; /* Yellow */
-    
+    --background: 250 30% 98%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 250 86% 74%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 250 43% 54%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 250 86% 94%;
+    --accent-foreground: 240 5.9% 10%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 60 100% 50%; /* Yellow */
-    --input: 60 100% 50%; /* Yellow */
-    --ring: 60 100% 50%; /* Yellow */
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 250 86% 74%;
 
     --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 250 86% 74%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 86% 94%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 240 5.9% 90%;
+    --sidebar-ring: 250 86% 74%;
   }
 
   .dark {
@@ -79,12 +89,12 @@
   * {
     @apply border-border;
   }
-  
+
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
-  
+
   html {
     @apply scroll-smooth;
   }
