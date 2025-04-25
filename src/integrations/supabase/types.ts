@@ -9,7 +9,108 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      members: {
+        Row: {
+          address: string
+          contact: string
+          date_created: string | null
+          email: string
+          firstname: string
+          gender: string
+          id: number
+          lastname: string
+          member_id: number
+          middlename: string
+        }
+        Insert: {
+          address: string
+          contact: string
+          date_created?: string | null
+          email: string
+          firstname: string
+          gender: string
+          id?: number
+          lastname: string
+          member_id: number
+          middlename: string
+        }
+        Update: {
+          address?: string
+          contact?: string
+          date_created?: string | null
+          email?: string
+          firstname?: string
+          gender?: string
+          id?: number
+          lastname?: string
+          member_id?: number
+          middlename?: string
+        }
+        Relationships: []
+      }
+      packages: {
+        Row: {
+          amount: number
+          description: string
+          id: number
+          package: string
+        }
+        Insert: {
+          amount: number
+          description: string
+          id?: number
+          package: string
+        }
+        Update: {
+          amount?: number
+          description?: string
+          id?: number
+          package?: string
+        }
+        Relationships: []
+      }
+      plans: {
+        Row: {
+          amount: number
+          id: number
+          plan: number
+        }
+        Insert: {
+          amount: number
+          id?: number
+          plan: number
+        }
+        Update: {
+          amount?: number
+          id?: number
+          plan?: number
+        }
+        Relationships: []
+      }
+      trainers: {
+        Row: {
+          contact: string
+          email: string
+          id: number
+          name: string
+          rate: number
+        }
+        Insert: {
+          contact: string
+          email: string
+          id?: number
+          name: string
+          rate: number
+        }
+        Update: {
+          contact?: string
+          email?: string
+          id?: number
+          name?: string
+          rate?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
