@@ -61,7 +61,7 @@ const Dashboard = () => {
       <div className="flex justify-between items-center">
         <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
         <div className="bg-primary/10 px-3 py-1 rounded-md text-primary">
-          ShackFitness Hyderabad
+          ShackFitness21 Hyderabad
         </div>
       </div>
 
